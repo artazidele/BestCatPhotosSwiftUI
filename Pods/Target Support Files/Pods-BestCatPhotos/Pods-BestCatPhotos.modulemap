@@ -1,0 +1,6 @@
+framework module Pods_BestCatPhotos {
+  umbrella header "Pods-BestCatPhotos-umbrella.h"
+
+  export *
+  module * { export * }
+}
