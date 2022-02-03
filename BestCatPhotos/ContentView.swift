@@ -110,74 +110,74 @@ struct ContentView: View {
 //    @EnvironmentObject var viewModel: AppViewModel
     
     var body: some View {
-        
-        VStack {
-            ZStack {
-            RoundedRectangle(cornerRadius: 8)
-                .stroke(Color.red, lineWidth: 2)
-            ZStack {
-                RoundedRectangle(cornerRadius: 6)
-                    .stroke(Color.red, lineWidth: 2)
-                VStack {
-                    VStack(alignment: .leading, spacing: 2) {
-                    Text("Email:")
-                            .padding()
-                        
-                    TextField("", text: $email)
-                        .autocapitalization(.none)
-                        .padding()
-            
-                    Text("Password:")
-                            .padding()
-                    
-                    SecureField("", text: $password)
-                        .autocapitalization(.none)
-                        .padding()
-                    }
-                    Button(action: {
-                        guard !email.isEmpty, !password.isEmpty else {
-                            return
-                        }
+        LogInView()
+//        VStack {
+//            ZStack {
+//            RoundedRectangle(cornerRadius: 8)
+//                .stroke(Color.red, lineWidth: 2)
+//            ZStack {
+//                RoundedRectangle(cornerRadius: 6)
+//                    .stroke(Color.red, lineWidth: 2)
+//                VStack {
+//                    VStack(alignment: .leading, spacing: 2) {
+//                    Text("Email:")
+//                            .padding()
+//
+//                    TextField("", text: $email)
+//                        .autocapitalization(.none)
+//                        .padding()
+//
+//                    Text("Password:")
+//                            .padding()
+//
+//                    SecureField("", text: $password)
+//                        .autocapitalization(.none)
+//                        .padding()
+//                    }
+//                    Button(action: {
+//                        guard !email.isEmpty, !password.isEmpty else {
+//                            return
+//                        }
         //                viewModel.logIn(email: email, password: password)
-                    }, label: {
-                        Text("Log In")
-                            .padding()
-                            .background(Color.red)
-                            .tint(Color.white)
-                            .cornerRadius(4)
-                    })
-                }
-            }
-            .padding(4)
-        }
-        .frame(width: 280, height: 320, alignment: .center)
-        .padding()
+//                    }, label: {
+//                        Text("Log In")
+//                            .padding()
+//                            .background(Color.red)
+//                            .tint(Color.white)
+//                            .cornerRadius(4)
+//                    })
+//                }
+//            }
+//            .padding(4)
+//        }
+//        .frame(width: 280, height: 320, alignment: .center)
+//        .padding()
+//
+//            Button(action: {
+//                guard !email.isEmpty, !password.isEmpty else {
+//                    return
+//                }
+////                viewModel.logIn(email: email, password: password)
+//            }, label: {
+//                Text("HAVE NOT GOT ACCOUNT?")
+//                    .tint(Color.red)
+//            })
+//                .padding()
             
-            Button(action: {
-                guard !email.isEmpty, !password.isEmpty else {
-                    return
-                }
-//                viewModel.logIn(email: email, password: password)
-            }, label: {
-                Text("HAVE NOT GOT ACCOUNT?")
-                    .tint(Color.red)
-            })
-                .padding()
             
-            
-            Button(action: {
-                guard !email.isEmpty, !password.isEmpty else {
-                    return
-                }
-//                viewModel.logIn(email: email, password: password)
-            }, label: {
-                Text("FORGOT PASSWORD?")
-                    .tint(Color.red)
-            })
-                .padding()
-            
-//            NavigationLink("Have not got account?", destination: SignUpView())
-        }
+//            Button(action: {
+//                guard !email.isEmpty, !password.isEmpty else {
+//                    return
+//                }
+////                viewModel.logIn(email: email, password: password)
+//            }, label: {
+//                Text("FORGOT PASSWORD?")
+//                    .tint(Color.red)
+//            })
+//                .padding()
+//
+////            NavigationLink("Have not got account?", destination: SignUpView())
+//        }
         
         
         
@@ -215,10 +215,10 @@ struct ContentView: View {
 //                SignInView()
 //            }
 //        }
-        .onAppear {
+//        .onAppear {
 //            viewModel.signedIn = viewModel.isSignedIn
 //            catPhotoViewModel.fetchData()
-        }
+//        }
     }
 }
 

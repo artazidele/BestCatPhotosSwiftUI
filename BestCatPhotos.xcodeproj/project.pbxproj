@@ -13,6 +13,7 @@
 		C2061197279948830001BD78 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2061196279948830001BD78 /* Assets.xcassets */; };
 		C206119A279948840001BD78 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2061199279948840001BD78 /* Preview Assets.xcassets */; };
 		C20611A327994ACF0001BD78 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C20611A227994ACF0001BD78 /* GoogleService-Info.plist */; };
+		C230314827ABE81B0000AB6F /* LogInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C230314727ABE81B0000AB6F /* LogInView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		C2061196279948830001BD78 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C2061199279948840001BD78 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C20611A227994ACF0001BD78 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		C230314727ABE81B0000AB6F /* LogInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,7 +47,6 @@
 				BD2DAC1597C774EBECF92699 /* Pods-BestCatPhotos.debug.xcconfig */,
 				08ECE13DCE9E337DD94AEE88 /* Pods-BestCatPhotos.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -83,6 +84,7 @@
 				C20611A227994ACF0001BD78 /* GoogleService-Info.plist */,
 				C2061196279948830001BD78 /* Assets.xcassets */,
 				C2061198279948840001BD78 /* Preview Content */,
+				C230314727ABE81B0000AB6F /* LogInView.swift */,
 			);
 			path = BestCatPhotos;
 			sourceTree = "<group>";
@@ -210,6 +212,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C230314827ABE81B0000AB6F /* LogInView.swift in Sources */,
 				C2061195279948810001BD78 /* ContentView.swift in Sources */,
 				C2061193279948810001BD78 /* BestCatPhotosApp.swift in Sources */,
 			);
